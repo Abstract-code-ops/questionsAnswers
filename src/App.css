@@ -1,0 +1,74 @@
+.body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background{
+  background-color: rgb(226, 224, 224);
+  padding: 2rem 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color: rgb(232, 212, 212);
+  padding: 0 2rem;
+  margin: 3rem 5rem;
+  box-shadow: 1px 1px 1rem 1px black;
+}
+
+.sub-container{
+  color: rgb(0, 0, 0);
+  margin: 2rem 0;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.question{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  margin: 0 1.5rem;
+  background-color: rgb(212, 97, 97);
+  color: rgb(204, 204, 204);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-show{
+  max-height: 0px;
+  display: block;
+  overflow: hidden;
+  transition: height ease 0.3s,max-height ease 0.3s;
+}
+
+.answer-noShow{
+  display: inline-block;
+  max-height: 100px;
+  overflow: hidden;
+  transition: height ease 0.3s, max-height ease 0.3s;
+}
+
+.title h1{
+  margin-bottom: 0.25rem;
+}
+
+.title div{
+  height: 5px;
+  width: 100%;
+  background-color: rgb(212, 97, 97);
+}
